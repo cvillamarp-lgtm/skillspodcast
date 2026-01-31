@@ -13,46 +13,44 @@ When the user asks for help with a difficult conversation:
 
 1. **Understand the situation** - Ask what kind of conversation (feedback, performance, firing, conflict resolution, delivering bad news) and what makes it difficult for them
 2. **Check their preparation** - Ensure they have specific examples, a clear desired outcome, and have thought through the other person's perspective
-3. **Choose the right framework** - Match the situation to the appropriate structure (SBI, CORE, NVC, or Radical Candor)
+3. **Choose the right framework** - Use the decision tree below to match situation to structure
 4. **Role-play if helpful** - Offer to practice the conversation so they can hear how it sounds and anticipate reactions
+
+## Decision Tree: Situation → Framework
+
+| Situation | Framework | Template |
+|---|---|---|
+| Performance feedback | SBI | "In [situation], when you [behavior], the impact was [impact]." |
+| Performance warning | Crystal Clear | "I need you to fix [issue] within [timeframe]. Otherwise, we're going to have to part ways." |
+| Firing | Brief confirmation + HR | "We talked about this. You haven't made the changes. We're going to part ways. [HR] will walk through logistics." |
+| Peer conflict | NVC | "When [observation], I feel [feeling], because I need [need]. Would you be willing to [request]?" |
+| Bad news (denied promo, etc.) | Hope + path forward | "I know this is hard to hear. [Decision + reason]. I'm committed to your success — here's what I'd like to do next." |
+| Defensive reaction | Perception check | "What did you hear me say?" |
+
+## Fill-in-the-Blank Templates
+
+**SBI (Situation-Behavior-Impact):**
+> In ______ (meeting/situation), when you ______ (observable behavior), it ______ (impact on you/team).
+
+**NVC (Nonviolent Communication):**
+> When ______ (objective observation), I feel ______ (emotion word, not "I feel that..."), because I need ______ (underlying need). Would you be willing to ______ (specific request)?
+
+**CORE (Context-Observation-Result-nExt step):**
+> Context: In ______ / Observation: when you ______ / Result: it ______ / Next step: I'd like you to ______.
+
+**Crystal Clear Warning:**
+> I need you to ______ within the next ______ days. Otherwise, we're going to have to part ways. I believe you can do this — but if these things don't change, we won't have a future together.
+
+**Termination:**
+> We've talked about this multiple times. The last time, I told you what needed to change. Those changes haven't happened, and we're going to part ways. [HR person] is here to walk through logistics.
 
 ## Core Principles
 
-### Radical Candor: Care personally AND challenge directly
-Kim Scott: "Radical Candor is what happens when you care personally and challenge directly at the same time." Avoid obnoxious aggression (challenge without care), ruinous empathy (care without challenge), and manipulative insincerity (neither). Most people err toward ruinous empathy - withholding feedback to spare feelings actually hurts the person.
-
-### Use the Situation-Behavior-Impact framework
-Paige Costello: "Situation, behavior, impact. The situation is on Tuesday in that meeting at 3:00. Behavior, you interrupted me while I was saying this thing. Impact, made me feel like you weren't listening." Keep it objective and specific. Describe what a camera would have recorded, not your interpretation of their motives.
-
-### Distinguish feelings from attributions
-Carole Robin: "'I feel that you don't care' and 'I feel you're being insensitive' are not feelings. That's where we make our biggest mistakes." Use actual emotion words (hurt, disappointed, anxious) not "I feel that" or "I feel like" which introduce stories and accusations.
-
-### Stay on your side of the net
-Carole Robin: "Stick with the two realities you know - your intent and their behavior. We get in trouble the minute we think we know the other person's reality." Only speak to what you observed and how it impacted you. Don't assume their motives.
-
-### Address pinches before they become crunches
-Carole Robin: "Address it while it's still small and then it won't get big." Small interpersonal irritations escalate into major conflicts when ignored. Notice when you're becoming activated and speak up early.
-
-### Deliver termination news personally, never by email
-Matt Mochary: "The biggest marker between a botched layoff and a successful layoff is whether they heard it from their manager in a one-on-one." Always deliver termination news in a private 1:1 meeting. Ensure the setting allows them to express emotions privately.
-
-### Give warning before the firing conversation
-Alisa Cohn: "I need you to fix this within the next 30 days. Otherwise, we're going to have to part ways." Before firing someone, you must have a "crystal clear" conversation where consequences are explicitly stated. Use the phrase "part ways" or "not have a future together" so there's no ambiguity.
-
-### Separate the decision from the implementation
-Matt Mochary: "Decision is one thing, implementation is completely separate. If you let them go kindly, become their agent - help them find their next job actively." The business decision may be necessary; the implementation should be compassionate. Reach out to your network to help them land somewhere that fits.
-
-### Provide hope when delivering bad news
-Alisa Cohn: "Hope for the future is so important. 'I know this is challenging to hear, not going to promote you, but I want you to know I'm committed to your success here.'" When denying a promotion or delivering disappointment, acknowledge the difficulty, express commitment to their career, and offer specific support.
-
-### Ask "What did you hear me say?"
-Carole Robin: "One of the most powerful things you can do when somebody responds unexpectedly is ask 'What did you hear me say?'" Repair conversations by checking for misaligned perceptions. Validate their reaction based on what they heard, even if it wasn't what you intended.
-
-### Withholding feedback is selfish
-Matt MacInnis: "The most selfish thing you can do is withhold feedback from someone. You're optimizing for your own comfort." Reframe difficult feedback as an unselfish act of service. Give it immediately when you observe something that could help them improve.
-
-### Use "nevertheless" to close debate
-Annie Duke: "'I hear you and understand. Nevertheless, this is what's going to happen.' Validate the perspective, then use 'nevertheless' to transition to the final decision without inviting further debate."
+1. **Radical Candor: care personally AND challenge directly.** Most people err toward ruinous empathy — withholding feedback to spare feelings actually hurts the person. (Kim Scott)
+2. **Withholding feedback is selfish.** You're optimizing for your own comfort. Reframe difficult feedback as an act of service. (Matt MacInnis, Uri Levine, Kim Scott, +4 others)
+3. **Distinguish feelings from attributions.** "I feel that you don't care" is not a feeling — it's an accusation. Use actual emotion words: hurt, disappointed, anxious. (Carole Robin)
+4. **Stay on your side of the net.** You know your intent and their behavior. The minute you assume their motives, you're in trouble. (Carole Robin)
+5. **Address pinches before they become crunches.** Small irritations escalate into major conflicts when ignored. Speak up while it's still small. (Carole Robin)
 
 ## Questions to Help Users
 
@@ -71,10 +69,6 @@ Annie Duke: "'I hear you and understand. Nevertheless, this is what's going to h
 - **Saving feedback for reviews** - Feedback should be immediate and ongoing, not saved for quarterly conversations
 - **Firing without prior warning** - The actual firing should be a brief confirmation, not a surprise. They should have heard the "crystal clear" warning first
 - **Email or group announcements for terminations** - Always deliver personally in a private 1:1
-
-## Deep Dive
-
-For all 78 insights from 43 guests, see `references/guest-insights.md`
 
 ## Related Skills
 
