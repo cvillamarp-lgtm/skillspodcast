@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '🎙️ Lenny Skills active: 86 PM skills available. Slash commands: /prd /prioritize /user-interview /evaluate-candidate /stakeholder /okrs /pmf /ship /competitive /difficult-conversation /north-star /ideate'"
+          }
+        ]
+      }
+    ]
+  }
+}

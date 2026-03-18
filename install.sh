@@ -4,30 +4,35 @@ set -euo pipefail
 # Install Lenny's Product Skills for Claude Code
 # Usage: ./install.sh [skill1 skill2 ...]
 #        ./install.sh --list
+#        ./install.sh --no-extras   (skip CLAUDE.md, commands, hooks)
 #        ./install.sh --all (default)
 
-SKILLS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/skills"
-TARGET_DIR=".claude/skills"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILLS_DIR="$REPO_DIR/skills"
+TARGET_SKILLS_DIR=".claude/skills"
+TARGET_COMMANDS_DIR=".claude/commands"
+SETTINGS_FILE=".claude/settings.json"
 
 print_usage() {
   echo "Usage: $0 [OPTIONS] [skill1 skill2 ...]"
   echo ""
   echo "Options:"
-  echo "  --all     Install all skills (default)"
-  echo "  --list    List available skills"
-  echo "  --help    Show this help message"
+  echo "  --all        Install all skills + commands + CLAUDE.md + hooks (default)"
+  echo "  --no-extras  Install skills only (no commands, CLAUDE.md, or hooks)"
+  echo "  --list       List available skills"
+  echo "  --help       Show this help message"
   echo ""
   echo "Examples:"
-  echo "  $0                              # Install all skills"
-  echo "  $0 writing-prds evaluating-candidates"
+  echo "  $0                                    # Install everything"
+  echo "  $0 writing-prds evaluating-candidates # Install specific skills + extras"
+  echo "  $0 --no-extras writing-prds           # Skills only"
   echo "  $0 --list"
 }
 
 list_skills() {
   echo "Available skills:"
   for skill_dir in "$SKILLS_DIR"/*/; do
-    skill_name="$(basename "$skill_dir")"
-    echo "  $skill_name"
+    echo "  $(basename "$skill_dir")"
   done
 }
 
@@ -36,20 +41,64 @@ install_skill() {
   local src="$SKILLS_DIR/$skill_name"
 
   if [[ ! -d "$src" ]]; then
-    echo "Error: skill '$skill_name' not found" >&2
+    echo "  Error: skill '$skill_name' not found" >&2
     return 1
   fi
 
-  mkdir -p "$TARGET_DIR/$skill_name"
-  cp -r "$src/." "$TARGET_DIR/$skill_name/"
-  echo "  Installed: $skill_name"
+  mkdir -p "$TARGET_SKILLS_DIR/$skill_name"
+  cp -r "$src/." "$TARGET_SKILLS_DIR/$skill_name/"
+  echo "  [skill] $skill_name"
+}
+
+install_commands() {
+  if [[ ! -d "$REPO_DIR/.claude/commands" ]]; then
+    return
+  fi
+  mkdir -p "$TARGET_COMMANDS_DIR"
+  cp "$REPO_DIR/.claude/commands/"*.md "$TARGET_COMMANDS_DIR/"
+  echo ""
+  echo "  [commands] /prd /prioritize /user-interview /evaluate-candidate"
+  echo "             /stakeholder /okrs /pmf /ship /competitive"
+  echo "             /difficult-conversation /north-star /ideate"
+}
+
+install_claude_md() {
+  if [[ ! -f "$REPO_DIR/CLAUDE.md" ]]; then
+    return
+  fi
+  if [[ -f "CLAUDE.md" ]]; then
+    echo ""
+    echo "  [CLAUDE.md] Already exists — appending Lenny Skills section..."
+    echo "" >> CLAUDE.md
+    cat "$REPO_DIR/CLAUDE.md" >> CLAUDE.md
+  else
+    cp "$REPO_DIR/CLAUDE.md" CLAUDE.md
+    echo ""
+    echo "  [CLAUDE.md] Created"
+  fi
+}
+
+install_hooks() {
+  if [[ ! -f "$REPO_DIR/.claude/settings.json" ]]; then
+    return
+  fi
+  mkdir -p .claude
+  if [[ -f "$SETTINGS_FILE" ]]; then
+    echo ""
+    echo "  [hooks] $SETTINGS_FILE already exists — skipping (merge manually if needed)"
+    echo "          Reference: $REPO_DIR/.claude/settings.json"
+  else
+    cp "$REPO_DIR/.claude/settings.json" "$SETTINGS_FILE"
+    echo ""
+    echo "  [hooks] SessionStart hook installed in $SETTINGS_FILE"
+  fi
 }
 
 main() {
   local install_all=true
+  local install_extras=true
   local skills_to_install=()
 
-  # Parse arguments
   while [[ $# -gt 0 ]]; do
     case "$1" in
       --help|-h)
@@ -62,6 +111,10 @@ main() {
         ;;
       --all)
         install_all=true
+        shift
+        ;;
+      --no-extras)
+        install_extras=false
         shift
         ;;
       -*)
@@ -77,8 +130,9 @@ main() {
     esac
   done
 
-  echo "Installing to $TARGET_DIR/"
-  mkdir -p "$TARGET_DIR"
+  echo "Installing Lenny's Product Skills for Claude Code..."
+  echo ""
+  mkdir -p "$TARGET_SKILLS_DIR"
 
   if [[ "$install_all" == true ]]; then
     for skill_dir in "$SKILLS_DIR"/*/; do
@@ -90,11 +144,19 @@ main() {
     done
   fi
 
+  if [[ "$install_extras" == true ]]; then
+    install_commands
+    install_claude_md
+    install_hooks
+  fi
+
   echo ""
-  echo "Done! Skills are ready in $TARGET_DIR/"
-  echo "Start using them in Claude Code:"
-  echo "  \"Help me write a PRD for our new feature\""
-  echo "  \"I need to evaluate a PM candidate\""
+  echo "Done!"
+  echo ""
+  echo "Try it in Claude Code:"
+  echo "  /prd"
+  echo "  /prioritize"
+  echo "  \"Help me evaluate this PM candidate\""
 }
 
 main "$@"
