@@ -1,4 +1,4 @@
-Use the `evaluating-candidates` skill to help the user make a hiring decision.
+Apply the following frameworks to help the user make a hiring decision.
 
 Start by asking:
 1. What role are you hiring for?

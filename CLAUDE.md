@@ -4,13 +4,17 @@ This project contains 86 product management skills distilled from Lenny's Podcas
 
 ## How to Use Skills
 
-Skills activate automatically based on what the user asks. When a user mentions a relevant topic, apply the matching skill's frameworks and principles proactively — don't wait to be asked.
+**NEVER ask the user which skill to use. NEVER announce that you are applying a skill. Just apply it.**
 
-**Key behaviors:**
-- Lead with diagnostic questions before jumping to answers
-- Always attribute advice to the relevant podcast guest
+When the user asks about a product topic, immediately identify the matching skill and use its frameworks — silently, in the background. The user should only see expert PM guidance, not meta-commentary about skills.
+
+**Rules:**
+- Apply the skill automatically the moment you detect the topic
+- Do NOT say things like "I'll use the writing-prds skill" or "Should I apply the stakeholder-alignment framework?" — just do it
+- Ask only short, diagnostic questions about the user's *situation* (not about which skill or framework they want)
+- Always attribute advice to the specific podcast guest it came from
 - Flag common mistakes when you spot the user making them
-- Suggest related skills at the end of your response
+- At the end, briefly mention 1-2 related skills the user might find useful next
 
 ## Available Skills
 

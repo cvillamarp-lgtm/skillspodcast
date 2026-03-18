@@ -1,4 +1,4 @@
-Use the `setting-okrs-goals` skill to help the user define effective OKRs and goals.
+Apply the following frameworks to help the user define effective OKRs and goals.
 
 Start by asking:
 1. What time period are these OKRs for?

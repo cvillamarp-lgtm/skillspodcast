@@ -1,4 +1,4 @@
-Use the `conducting-user-interviews` skill to help the user prepare for or debrief a user interview.
+Apply the following frameworks to help the user prepare for or debrief a user interview.
 
 First ask: Are you preparing for an upcoming interview, or debriefing one that already happened?
 

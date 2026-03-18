@@ -1,4 +1,4 @@
-Use the `having-difficult-conversations` skill to help the user prepare for a tough conversation.
+Apply the following frameworks to help the user prepare for a tough conversation.
 
 Start by asking:
 1. What is the conversation about? (performance, conflict, feedback, bad news, etc.)

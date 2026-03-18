@@ -1,4 +1,4 @@
-Use the `stakeholder-alignment` skill to help the user align stakeholders and get buy-in.
+Apply the following frameworks to help the user align stakeholders and get buy-in.
 
 Start by asking:
 1. What decision or initiative are you trying to get alignment on?

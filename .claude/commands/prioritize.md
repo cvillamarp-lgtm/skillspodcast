@@ -1,4 +1,4 @@
-Use the `prioritizing-roadmap` skill to help the user prioritize their product roadmap.
+Apply the following frameworks to help the user prioritize their product roadmap.
 
 Start by asking:
 1. What items are you trying to prioritize? (ask them to list them)

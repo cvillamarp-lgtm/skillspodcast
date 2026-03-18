@@ -1,4 +1,4 @@
-Use the `shipping-products` skill to help the user ship faster with higher quality.
+Apply the following frameworks to help the user ship faster with higher quality.
 
 Start by asking:
 1. What are you trying to ship?

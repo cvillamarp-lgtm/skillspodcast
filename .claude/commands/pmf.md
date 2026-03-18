@@ -1,4 +1,4 @@
-Use the `measuring-product-market-fit` skill to help the user assess their product-market fit.
+Apply the following frameworks to help the user assess their product-market fit.
 
 Start by asking:
 1. What product are you evaluating?

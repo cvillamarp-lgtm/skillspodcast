@@ -1,4 +1,4 @@
-Use the `writing-north-star-metrics` skill to help the user define their North Star metric.
+Apply the following frameworks to help the user define their North Star metric.
 
 Start by asking:
 1. What does your product do, and who does it serve?

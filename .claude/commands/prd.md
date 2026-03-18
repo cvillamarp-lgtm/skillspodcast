@@ -1,4 +1,4 @@
-Use the `writing-prds` skill to help the user write a Product Requirements Document.
+Apply the following frameworks to help the user write a Product Requirements Document.
 
 Start by asking:
 1. What problem is this solving, and why does it matter now?

@@ -1,4 +1,4 @@
-Use the `startup-ideation` skill to help the user generate and evaluate startup or product ideas.
+Apply the following frameworks to help the user generate and evaluate startup or product ideas.
 
 Start by asking:
 1. Are you generating new ideas, or evaluating ideas you already have?

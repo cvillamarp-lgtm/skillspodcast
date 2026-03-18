@@ -1,4 +1,4 @@
-Use the `competitive-analysis` skill to help the user understand and respond to competition.
+Apply the following frameworks to help the user understand and respond to competition.
 
 Start by asking:
 1. Who are you analyzing? (specific competitor or general landscape?)
