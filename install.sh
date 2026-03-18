@@ -6,8 +6,22 @@ set -euo pipefail
 #        ./install.sh --list
 #        ./install.sh --no-extras   (skip CLAUDE.md, commands, hooks)
 #        ./install.sh --all (default)
+#
+# One-liner remote install:
+#   curl -fsSL https://raw.githubusercontent.com/cvillamarp-lgtm/skillspodcast/master/install.sh | bash
 
+REPO_URL="https://github.com/cvillamarp-lgtm/skillspodcast.git"
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# If running piped from curl, skills dir won't exist — clone to a temp dir first
+if [[ ! -d "$REPO_DIR/skills" ]]; then
+  TMP_DIR="$(mktemp -d)"
+  trap 'rm -rf "$TMP_DIR"' EXIT
+  echo "Downloading Lenny's Product Skills..."
+  git clone --depth=1 --quiet "$REPO_URL" "$TMP_DIR"
+  REPO_DIR="$TMP_DIR"
+fi
+
 SKILLS_DIR="$REPO_DIR/skills"
 TARGET_SKILLS_DIR=".claude/skills"
 TARGET_COMMANDS_DIR=".claude/commands"
